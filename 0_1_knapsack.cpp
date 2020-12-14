@@ -23,8 +23,8 @@ int main() {
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 #endif
-	int val[] = {80, 60, 100, 120};
-	int wt[] = {25, 10, 20, 30};
+	int val[] = {20, 80, 60, 100, 120};
+	int wt[] = {5, 25, 10, 20, 30};
 	int w = 80;
 	int n = sizeof(val) / sizeof(val[0]);
 	cout << knapsack(val, wt, w, n) << endl;
