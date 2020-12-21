@@ -38,8 +38,12 @@ while(t--){
 	forinput
 	// "Enter tHe Element you wanna Search "
 	int ele; cin>>ele;
-	cout<<binarySearch(arr, n, ele)<<endl;
+	int answer = binarySearch(arr, n, ele);
+	cout<<answer<<endl;
 }
 					
 return 0;
 }
+
+
+  // 9151666779
