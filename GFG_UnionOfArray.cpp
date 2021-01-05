@@ -9,7 +9,7 @@ using namespace std;
 #define pb push_back
 #define pob pop_back
 
-int incSort(int arr[], int n){
+void incSort(int arr[], int n){
 	for(int i = 0; i < n ; i++){
 	for(int j = i+1; j < n; j++){
 		if(arr[i]>arr[j]){
@@ -17,7 +17,6 @@ int incSort(int arr[], int n){
 		}
 	}
 }
-return arr;
 }
 
 void arrUnion(int arr1[], int arr2[], int n, int m){
