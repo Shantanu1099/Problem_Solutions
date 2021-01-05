@@ -8,7 +8,7 @@ using namespace std;
 #define pb push_back
 #define pob pop_back
 
-int factori(lli n){
+int factoria(lli n){
 	if(n>1){
 return n*factori(n-1);
 }
@@ -24,7 +24,7 @@ int main(){
 int t; cin>>t;
 while(t--){
 	lli n; cin>>n;
-	cout<<factori(n)<<endl;
+	cout<<factoria(n)<<endl;
 }				
 return 0;
 }
