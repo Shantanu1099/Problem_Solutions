@@ -1,3 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define lli long long int
+#define vi vector<int>
+#define forinput for(int i = 0; i<n ; i++){cin>>arr[i];}
+#define foroutput for(int i = 0; i<n; i++){cout<<arr[i]<<" ";}
+#define pb push_back
+#define pob pop_back
+
+// Optimised Approach
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -16,3 +27,15 @@ public:
     return arr;
     }
 };
+int main(){
+	Solution s;
+	vi arr = {2, 7, 11, 15};
+	int target = 9;
+	int arr1 = s.twoSum(arr, target);
+	for(int i = 0; i < arr1.size(); i++)
+	{
+	cout<<arr[i]<<'\t';
+	}
+
+	return 0;
+}
