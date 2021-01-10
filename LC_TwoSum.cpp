@@ -47,14 +47,17 @@ public:
     return arr;
     }
 };
-int main(){
-	Solution s;
-	vi arr;
-	arr = s.twoSum({2,7,11,15},9);
-	for(int i = 0; i < arr.size(); i++)
-	{
-	cout<<arr[i]<<'\t';
-	}
 
-	return 0;
-}
+//Use One Class At A time
+
+// int main(){
+// 	Solution s;
+// 	vi arr;
+// 	arr = s.twoSum({2,7,11,15},9);
+// 	for(int i = 0; i < arr.size(); i++)
+// 	{
+// 	cout<<arr[i]<<'\t';
+// 	}
+
+// 	return 0;
+// }
