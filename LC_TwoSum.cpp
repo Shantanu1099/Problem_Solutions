@@ -8,7 +8,27 @@ using namespace std;
 #define pb push_back
 #define pob pop_back
 
-// Optimised Approach
+// Brute Force Approach T.C. -> O(n^2)
+class Solution{
+public:
+	vector<int>twoSum(vector<int> nums, int target){
+		vi arr(2);
+		for(int i = 0; i < nums.size(); i++)
+		{
+			for(int j = i+1; j < nums.size(); j++)
+			{
+			if(nums[i]+nums[j] == target){
+			arr[0] = i;
+			arr[1] = j;
+			}
+			}
+		}
+		return arr;
+	}
+};
+
+
+// Optimised Approach T.C.=> O(n)
 class Solution {
 public:
     vector<int> twoSum(vector<int> nums, int target) {
