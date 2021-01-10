@@ -11,7 +11,7 @@ using namespace std;
 // Optimised Approach
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> twoSum(vector<int> nums, int target) {
         vector<int> arr(2);
         unordered_map<int, int> mp;
         for(int i = 0;i<nums.size();++i){
@@ -29,10 +29,9 @@ public:
 };
 int main(){
 	Solution s;
-	vi arr = {2, 7, 11, 15};
-	int target = 9;
-	int arr1 = s.twoSum(arr, target);
-	for(int i = 0; i < arr1.size(); i++)
+	vi arr;
+	arr = s.twoSum({2,7,11,15},9);
+	for(int i = 0; i < arr.size(); i++)
 	{
 	cout<<arr[i]<<'\t';
 	}
