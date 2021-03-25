@@ -7,13 +7,11 @@ using namespace std;
 #define foroutput for(int i = 0;i<n;i++){cout<<arr[i]<<" ";}
 #define pb push_back
 #define pob pop_back
-const int mod = 1e9+7;
 int main(){
-	int t; cin>>t;
-	while(t--){
-	int n; cin>>n;
-	int m; cin>>m;
-	int k; cin>>k;
-	}
+	
+lli n; cin>>n;
+lli sum = n*(n+1)/2;
+cout<<(sum%2)<<endl;
+
 	return 0;
 }
