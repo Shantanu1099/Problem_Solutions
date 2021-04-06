@@ -20,7 +20,7 @@ while( t-- ){
 		for (int j = 1; j < i; ++j)
 		{
 			a[i][j] = a[i-1][j-1] + a[i-1][j];
-		} 
+		}
 	}
 	for (int i = 0; i < n; ++i)
 	{
