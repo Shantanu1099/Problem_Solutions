@@ -7,8 +7,8 @@ using namespace std;
 #define foroutput for(int i = 0;i<n;i++){cout<<arr[i]<<" ";}
 #define pb push_back
 #define pob pop_back
-const int N = 1e8;
-int arr[N];
+// const int N = 1e8;
+// int arr[N];
 int main(){
 	// arr[0] = 10;
 	// cout<<arr[0]<<endl;
@@ -29,10 +29,14 @@ int main(){
 	// cout<<str<<endl<<str2;
 
 	// Storing larger Integer Values using String
-	string l_n; cin>>l_n;
-	cout<<(int)(l_n[l_n.size()-1]-'0')<<endl;
-	cout<<(int)'0'<<endl;
+	// string l_n; cin>>l_n;
+	// cout<<(int)(l_n[l_n.size()-1]-'0')<<endl;
+	// cout<<(int)'0'<<endl;
 
+int a; cin>>a;
+int b; cin>>b;
+int smallest = (a-b)>(b-a)? b:a;
+cout<<smallest<<endl;
 
 	return 0;
 }
