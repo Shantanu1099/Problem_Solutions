@@ -40,3 +40,4 @@ cout<<smallest<<endl;
 
 	return 0;
 }
+// LOL
