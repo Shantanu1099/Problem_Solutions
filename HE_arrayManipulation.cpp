@@ -12,9 +12,30 @@ long long int arr[N];
 int main(){
 
 
-// int n; cin>>n;
-// int m; cin>>m;
+int n, m; 
+cin>>n>>m;
 
+while(m--){
+	int a, b, k;
+	cin>>a>>b>>k;
+	arr[a] += k;
+	arr[b+1] += -k;
+}
+
+long long res = -1;
+
+for( int i = 1; i <= n; ++i ){
+	arr[i] += arr[i-1];
+	if( arr[i] > res ){
+		res = arr[i];
+	}
+}
+
+cout<<res<<endl;
+
+// for( int i = 1 ; i <= n ; ++i ){
+
+// }
 
 
 // Time Limit Exceeded
