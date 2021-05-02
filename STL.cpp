@@ -9,15 +9,15 @@ using namespace std;
 #define pob pop_back
 
 
-void vecPairOP(vector<pair<int, int>> a){
+void vecPairOP(vector<pair<int, int>>& a){
 	cout << "Size: " << a.size() <<endl;
 	for(int i = 0; i < a.size(); ++i){
 	cout << a[i].first << " " << a[i].second << endl;
 }
-	a.pb(make_pair(33, 55));
-	for(int i = 0; i < a.size(); ++i){
-	cout << a[i].first << " " << a[i].second << endl;
-}
+	a.pb(make_pair(22, 11));
+// 	for(int i = 0; i < a.size(); ++i){
+// 	cout << a[i].first << " " << a[i].second << endl;
+// }
 }
 
 void vecOp(vector<int> & v){
@@ -38,22 +38,27 @@ int main(){
 
 	// Nested vectors
 	// VECTOR of Pairs
-	vector<pair< int , int > > v = {{2, 3}, {5, 6}, {88, 44}};
+	// vector<pair< int , int > > v = {{2, 3}, {5, 6}, {88, 44}}; Assigning values
+	vector<pair< int, int >> v;
+	int n; cin>> n;
+	for(int i = 0; i < n ; ++i ){ 
+		int x, y; cin >> x >> y;
+		v.pb({x, y});
+	}
 	vecPairOP(v);
-	cout << v[3].first << " " ;
-	cout << v[3].second << endl;
+
 
 	// 1 - Array of vectors
-	int n; cin>>n;
-	vector<int> v2[n];
-	for(int i = 0; i < n; ++i ){
-		int s; cin >> s;
-		for(int j = 0; j < s; ++j){
-			int ip ; cin>>ip;
-			v2[i].pb(ip);
-		}
-	vecOp(v2[i]);
-	}
+	// int n; cin>>n;
+	// vector<int> v2[n];
+	// for(int i = 0; i < n; ++i ){
+	// 	int s; cin >> s;
+	// 	for(int j = 0; j < s; ++j){
+	// 		int ip ; cin>>ip;
+	// 		v2[i].pb(ip);
+	// 	}
+	// vecOp(v2[i]);
+	// }
 
 	// vector<int> v;
 	// v.pb(88);
