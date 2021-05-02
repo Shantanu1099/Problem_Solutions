@@ -7,14 +7,41 @@ using namespace std;
 #define foroutput for(int i = 0;i<n;i++){cout<<arr[i]<<" ";}
 #define pb push_back
 #define pob pop_back
-const int N = 1e8;
-int arr[N];
-int main(){
-for (int i = 0; i < N; ++i)
-{
-	arr[i] = i;
+// const int N = 1e8;
+// int arr[N];
+
+
+
+void vecOp(vector<int> v){
+	cout << "Size of vector: "<< v.size() << endl;
+	// for(int i = 0; i < v.size(); ++i){
+	// 	cout<<v[i]<<" ";
 }
-cout<<arr[N-1];
+
+int main(){
+// Pair
+	// pair<int , string>pp;
+	// pp = make_pair(4, "JBCKb");
+	// cout<<pp.first<<" "<<pp.second<<endl;
+	// pair<int, int> p[2];
+	// p[0] = {2, 3};
+	// p[1] = {5, 7};
+	// for(int i = 0; i < 2; ++i){
+	// 	cout<<p[i].first<<" "<<p[i].second<<endl;
+	// }
+
+// Vectors
+	vector<int> v(9, 8);
+	cout << v.size();
+	vecOp(v);
+
+
+
+// for (int i = 0; i < N; ++i)
+// {
+// 	arr[i] = i;
+// }
+// cout<<arr[N-1];
 
 
 

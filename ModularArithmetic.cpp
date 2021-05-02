@@ -8,14 +8,15 @@ using namespace std;
 #define pb push_back
 #define pob pop_back
 int main(){
-const int M = 47;
-int n; cin>>n;
-int fact = 1;
-for (int i = 2; i < n; ++i)
-	{
-		fact = (fact * i) % M ;
-	}	
-	cout<<fact;
+
+// const int M = 47;
+// int n; cin>>n;
+// int fact = 1;
+// for (int i = 2; i < n; ++i)
+// 	{
+// 		fact = (fact * i) % M ;
+// 	}	
+// 	cout<<fact;
 
 	return 0;
 }
