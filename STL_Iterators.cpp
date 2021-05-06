@@ -93,8 +93,24 @@ int main(){
 
 
 	// Short Loops - Auto Keyword & Range Based Combined for better readability and clean code
+	// Auto Keyword determines the datatype Automatically
+
 	auto a = 11.33;
-	cout << typeid(a).name() << " - " << a;
+	cout << typeid(a).name() << " - " << a << endl;
+	for(auto &ip : v1){
+		cout << ip << " " ;
+	}
+	cout << endl;
+	for(auto &ip : v1){
+		ip++;
+		cout << ip << " " ;
+	}
+	cout << endl;
+	vector<pair<int, int>> v2 = {{43, 33}, {29, 224}};
+
+	for(auto ele : v2){
+		cout << ele.first << " " << ele.second << endl;
+	}
 
 
 	return 0;
