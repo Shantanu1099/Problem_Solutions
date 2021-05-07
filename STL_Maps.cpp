@@ -30,7 +30,15 @@ m[5] = 432;
 m[4] = 2323;
 m[3]; // Inserting a key as well takes a time of (O(log n)) & so does Accessing it.
 
-m.find(8);
+auto it = m.find(8);
+
+if( it != m.end()){   // Gives Segmentation Fault when Any value at or beyond m.end() is Accessed
+m.erase(it); // O(log(n))
+}
+
+if(it == m.end()) cout << "NOT FOUND" << endl;
+
+else  cout << "FOUND: " << it->first << " " << it->second << endl;
 iterMap(m);
 
 
@@ -38,19 +46,19 @@ iterMap(m);
 
 // Below are three ( 3 ) ways of writing Iterating statement, choose what you like most
 
-map<int, int> :: iterator it;
-for( it = m.begin() ; it != m.end(); ++it){
-	cout << it->first << " " << it->second <<endl;
-}
+// map<int, int> :: iterator it;
+// for( it = m.begin() ; it != m.end(); ++it){
+// 	cout << it->first << " " << it->second <<endl;
+// }
 
-for(pair<int , int> pp: m){
-	cout << pp.first << " " << pp.second << endl;  
-}
+// for(pair<int , int> pp: m){
+// 	cout << pp.first << " " << pp.second << endl;  
+// }
 
-for(auto &pr: m){ // (O(nlogn)) coz we are accessing n elements n = 5 ;}
+// for(auto &pr: m){ // (O(nlogn)) coz we are accessing n elements n = 5 ;}
 
-	cout << pr.first << " " << pr.second << endl;  
-}
+// 	cout << pr.first << " " << pr.second << endl;  
+// }
 // cout << m[1] << endl << m[5] <<	endl << m[4] << endl;
 
 	return 0;
