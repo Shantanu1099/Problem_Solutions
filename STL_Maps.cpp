@@ -15,6 +15,10 @@ void iterMap(map<int, int> mm){
 }
 }
 int main(){ 
+// While initialising strings as keys the T.C. increases to O(s.size()*log(n)) while insertion b'coz of the self/lexiographical sorting technique of Red-Black Trees in the keys part....That's why it is an ordered 'map'...
+
+// IN case of  'unordered_map <int, string> mmm;'  Everything is same except -> Inbuilt Implementation which is Hashmap.. and because Hashmap is used so Insertion and Accessement T.C. -> turns O(1) & keys datatypes -> Cannot use complex datatypes such as Containers must use int, float, long long, double these already defined fixed size Datatypes....
+
 
 // map<int , string > mm;
 // mm[1] = "LALALAL";
@@ -30,7 +34,7 @@ m[5] = 432;
 m[4] = 2323;
 m[3]; // Inserting a key as well takes a time of (O(log n)) & so does Accessing it.
 
-auto it = m.find(8);
+auto it = m.find(8);  // O(log(n))
 
 if( it != m.end()){   // Gives Segmentation Fault when Any value at or beyond m.end() is Accessed
 m.erase(it); // O(log(n))
@@ -38,7 +42,9 @@ m.erase(it); // O(log(n))
 
 if(it == m.end()) cout << "NOT FOUND" << endl;
 
-else  cout << "FOUND: " << it->first << " " << it->second << endl;
+else  cout << "FOUND: " << it->first << " " << it->second << endl; 
+
+m.clear(); //clears all pairs in maps
 iterMap(m);
 
 
