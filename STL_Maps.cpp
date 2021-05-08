@@ -20,7 +20,7 @@ int main(){
 // IN case of  'unordered_map <int, string> mmm;'  Everything is same except -> Inbuilt Implementation which is Hashmap.. and because Hashmap is used so Insertion and Accessement T.C. -> turns O(1) & keys datatypes -> Cannot use complex datatypes such as Containers must use int, float, long long, double these already defined fixed size Datatypes....
 
 
-// The major difference of 'multimap<int, string> mmmm;' when compared to maps is that it can store multiple similar value of key... The concept of Unique Key isn't available here..
+// The major difference of 'multimap<int, string> mmmm;' when compared to maps is that it can store multiple similar value of key... The concept of Unique Key isn't available here..        You can do the same thing using map as well like.... map<int, vector<string> > mmod;
 
 // map<int , string > mm;
 // mm[1] = "LALALAL";
