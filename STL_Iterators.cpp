@@ -4,6 +4,7 @@ using namespace std;
 #define ll long long
 #define lli long long int
 #define vi vector<int>
+#define vvi vector<vector<int>>
 #define forinput for(int i =0;i<n;i++){cin>>arr[i];}
 #define foroutput for(int i = 0;i<n;i++){cout<<arr[i]<<" ";}
 #define pb push_back
@@ -112,6 +113,24 @@ int main(){
 		cout << ele.first << " " << ele.second << endl;
 	}
 
+
+	vector<vector<int> >  vv_arr = {{2, 3, 4, 5, 6}, {4, 3535, 33, 232}};
+	for(auto & ele : vv_arr){
+		for( auto & ele2 : ele){
+			cout << ele2 << " ";
+		}
+		cout << endl;
+	}
+	cout << endl << endl;
+
+	vvi :: iterator vv_itr ;
+	vi :: iterator v_itr;
+	for(auto vv_itr = begin(vv_arr); vv_itr != end(vv_arr); ++vv_itr){
+		for(auto v_itr = (*vv_itr).begin(); v_itr != (*vv_itr).end(); ++v_itr){
+			cout << (*v_itr) << " ";
+		} 
+		cout << endl;
+	}
 
 	return 0;
 }
