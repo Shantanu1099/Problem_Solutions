@@ -17,10 +17,18 @@ int main(){
 
 // set<container/primitive types> s; Every element in Set in UNique and lexiographical Sorting is done inside Set similat to Map T.C. is also same as Map... Inserting and Accessing is O(log(n));
 
-// unordered_set<int> us;
+// unordered_set<primitive types> us; no sorting in element similar to un..maps; 
 
-set<string> s;
-s.insert("LOL");	 // O(log(n)) - Red-Black Trees are used in Set as in Maps.
+// set<string> s;
+// s.insert("LOL");	 // O(log(n)) - Red-Black Trees are used in Set as in Maps.
+// s.insert("HAHAHAH");
+// s.insert("DAMN BRO");
+// cout << "Previous Set :" << endl;
+
+
+// Multisets
+multiset<string> s;
+s.insert("LOL");	 // O(log(n)) - Red-Black Trees are used in Multiset as in Multimpas... duplicates  elements are allowed
 s.insert("HAHAHAH");
 s.insert("DAMN BRO");
 cout << "Previous Set :" << endl;

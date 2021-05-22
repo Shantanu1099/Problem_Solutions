@@ -53,7 +53,8 @@ int main(){
 	// vector<pair<int, int>> v = {{33, 44}, {443, 665}};
 	// vector<int> v1 = {33, 44, 443, 665};
 	// cout<<v[0][1].first << " " << v[0][1].second << endl;
-	// vector<vector<pair<int, int>>> :: iterator it ;
+	// vector<vector<pair<int,int>>> v = {{{43, 353}, {544, 665}}, {{65, 88}, {66, 99}}};
+	// vector<pair<int, int>> :: iterator it ;
 	// for(int i = 0 ; i < v.size(); ++i){
 	// 	for(it = v[i].begin(); it != v[i].end(); ++it){
 	// 	cout << (it->first) << " " << (it->second) << endl;
@@ -126,7 +127,7 @@ int main(){
 	vvi :: iterator vv_itr ;
 	vi :: iterator v_itr;
 	for(auto vv_itr = begin(vv_arr); vv_itr != end(vv_arr); ++vv_itr){
-		for(auto v_itr = (*vv_itr).begin(); v_itr != (*vv_itr).end(); ++v_itr){
+		for(auto v_itr = vv_itr->begin(); v_itr != (*vv_itr).end(); ++v_itr){
 			cout << (*v_itr) << " ";
 		} 
 		cout << endl;

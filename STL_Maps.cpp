@@ -30,10 +30,11 @@ int main(){
 // }
 
 
-map< int, int> m;   // Can put any Container inside the < > thing...
+map< int, int> m;   // Can put any Container inside the < > thing... keys rae unique..i.e. There can'r be same key for multiple values...Cannot store more than 1 value...& that will be the latest Assigned value
 m[1] = 67;
 m[5] = 432;
 m[4] = 2323;
+m.insert({3, 222}); //inserting pair....
 m[3]; // Inserting a key as well takes a time of (O(log n)) & so does Accessing it.
 
 auto it = m.find(8);  // O(log(n))
