@@ -12,13 +12,27 @@ using namespace std;
 
 
 
-void vecOp(vector<int> v){
-	cout << "Size of vector: "<< v.size() << endl;
+// void vecOp(vector<int> v){
+// 	cout << "Size of vector: "<< v.size() << endl;
 	// for(int i = 0; i < v.size(); ++i){
 	// 	cout<<v[i]<<" ";
-}
+// }
 
 int main(){
+
+vi nums = { 3, 4, 5, 6 , 5, 6, 3};
+	unordered_map<int, int> mp;
+	for(auto & values : nums ){
+		mp[values]++;
+	}
+	for(auto & pr : mp ){
+		if(pr.second == 1){
+			cout << pr.first << endl;
+		}
+		// cout << pr.first << " " << pr.second << endl;
+	}
+
+
 // Pair
 	// pair<int , string>pp;
 	// pp = make_pair(4, "JBCKb");
@@ -31,9 +45,9 @@ int main(){
 	// }
 
 // Vectors
-	vector<int> v(9, 8);
-	cout << v.size();
-	vecOp(v);
+	// vector<int> v(9, 8);
+	// cout << v.size();
+	// vecOp(v);
 
 
 
