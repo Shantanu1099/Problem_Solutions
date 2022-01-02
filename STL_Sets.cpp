@@ -30,7 +30,7 @@ int main(){
 
 // Multisets
 multiset<string> s;
-s.insert("LOL");	 // O(log(n)) - Red-Black Trees are used in Multiset as in Multimpas... duplicates  elements are allowed
+s.insert("LOL");	 // O(log(n)) - Red-Black Trees are used in Multiset as in Multimaps... duplicates  elements are allowed
 s.insert("HAHAHAH");
 s.insert("LOL");
 s.insert("DAMN BRO");
