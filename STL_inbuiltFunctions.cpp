@@ -19,7 +19,7 @@ int main(){
 	auto sum = [](int a , int b){return a+b;};
 	cout << sum(5, 6) << endl;
 	vi v = {1, 3, 4, 5};
-	cout << all_of(v.begin(), v.end(), [](int a){return a > 1;}) << " ";
+	cout << all_of(v.begin()+1, v.end(), [](int a){return a > 1;}) << " ";
 	cout << any_of(v.begin(), v.end(), [](int a){return a > 1;}) << " ";
 	cout << none_of(v.begin(), v.end(), [](int a){return a > 1;}) << " ";
 	cout << any_of(v.begin(), v.end(), conditionProvided) << " ";
