@@ -47,9 +47,9 @@ public:
 };
 
 
-int main(){
-    Solution sol_obj;
-    vi nums = {1,1,1,3,3,4,3,2,4,2};
-    bool isAvail = sol_obj.containsDuplicate(nums);
-    cout << (isAvail == 1 ? "true" : "false")  << endl;
-}
+// int main(){
+//     Solution sol_obj;
+//     vi nums = {1,1,1,3,3,4,3,2,4,2};
+//     bool isAvail = sol_obj.containsDuplicate(nums);
+//     cout << (isAvail == 1 ? "true" : "false")  << endl;
+// }
