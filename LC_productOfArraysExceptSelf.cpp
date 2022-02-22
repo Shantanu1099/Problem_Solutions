@@ -12,7 +12,7 @@ using namespace std;
 #define forop for(int i = 0; i < n; ++i){cout << arr[i]};
 // Always remember Overflow
 
-
+// S
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
@@ -24,12 +24,15 @@ public:
         
         for(int i=1;i<n;i++){
             fromBegin[i]=fromBegin[i-1]*nums[i-1];
+            // cout << fromBegin[i] << " fromBegin: " << i << endl;
             fromLast[i]=fromLast[i-1]*nums[n-i];
+            // cout << fromLast[i] << " fromLast: " << i  << endl;
         }
         
         vector<int> res(n);
         for(int i=0;i<n;i++){
             res[i]=fromBegin[i]*fromLast[n-1-i];
+            // cout << res[i] << " res: " << i << endl;
         }
         return res;
     }
