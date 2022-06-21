@@ -1,5 +1,6 @@
-YES
-YES
-NO
-NO
-YES
+#include <iostream>
+using namespace std;
+int main() {
+	string s; cin >> s;
+	cout << "Hello " << s;
+}
