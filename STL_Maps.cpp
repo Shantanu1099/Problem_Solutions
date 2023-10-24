@@ -47,7 +47,7 @@ if(it == m.end()) cout << "NOT FOUND" << endl;
 
 else  cout << "FOUND: " << it->first << " " << it->second << endl; 
 
-m.clear(); //clears all pairs in maps
+// m.clear(); //clears all pairs in maps
 iterMap(m);
 
 
